@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AuthFlow — Sign in</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <section class="visual-panel">
+      <div class="brand"><span class="brand-mark">a</span><span>authflow</span></div>
+      <div class="visual-copy">
+        <span class="eyebrow">YOUR SPACE. YOUR RULES.</span>
+        <h1>Security that<br>feels <em>effortless.</em></h1>
+        <p>A calmer, smarter way to access the things that matter to you.</p>
+      </div>
+      <div class="floating-card">
+        <div class="shield">✓</div>
+        <div><strong>You're in control</strong><span>Privacy comes standard.</span></div>
+        <span class="live-dot"></span>
+      </div>
+      <div class="visual-footer"><span>● Private by design</span><span>Built for your next chapter ↗</span></div>
+    </section>
+
+    <section class="form-panel">
+      <div class="mobile-brand brand"><span class="brand-mark">a</span><span>authflow</span></div>
+      <div class="form-wrap">
+        <div class="welcome-tag">WELCOME BACK</div>
+        <h2>Sign in to your<br>account</h2>
+        <p class="subtext">Pick up right where you left off.</p>
+
+        <form id="loginForm">
+          <label for="email">Email address</label>
+          <div class="input-wrap"><span class="input-icon">✉</span><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required></div>
+
+          <div class="label-row"><label for="password">Password</label><a href="#" id="forgotLink">Forgot password?</a></div>
+          <div class="input-wrap"><span class="input-icon">⌑</span><input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required minlength="8"><button class="reveal" type="button" id="togglePassword" aria-label="Show password">Show</button></div>
+
+          <label class="remember"><input type="checkbox" id="remember"> <span>Keep me signed in on this device</span></label>
+          <button class="primary-btn" type="submit">Sign in <span>→</span></button>
+          <div id="message" class="message" role="status"></div>
+        </form>
+        <div class="separator"><span>NEW TO AUTHFLOW?</span></div>
+        <a class="secondary-btn" href="register.html" style="text-align:center;display:block;">Create an account <span>↗</span></a>
+        <p class="fineprint">By continuing, you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.</p>
+      </div>
+      <div class="form-bottom"><span>© 2026 AuthFlow</span><span>Need help? <a href="mailto:support@example.com">Contact support</a></span></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

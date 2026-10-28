@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AuthFlow — Create account</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <section class="visual-panel">
+      <div class="brand"><span class="brand-mark">a</span><span>authflow</span></div>
+      <div class="visual-copy">
+        <span class="eyebrow">GET STARTED TODAY.</span>
+        <h1>Your account,<br>your <em>privacy.</em></h1>
+        <p>Create an account in seconds and stay in control from day one.</p>
+      </div>
+      <div class="floating-card">
+        <div class="shield">✓</div>
+        <div><strong>Secure by default</strong><span>Passwords are hashed. Always.</span></div>
+        <span class="live-dot"></span>
+      </div>
+      <div class="visual-footer"><span>● Private by design</span><span>Built for your next chapter ↗</span></div>
+    </section>
+
+    <section class="form-panel">
+      <div class="mobile-brand brand"><span class="brand-mark">a</span><span>authflow</span></div>
+      <div class="form-wrap">
+        <div class="welcome-tag">CREATE ACCOUNT</div>
+        <h2>Join AuthFlow</h2>
+        <p class="subtext">It only takes a moment.</p>
+
+        <form id="registerForm">
+          <label for="name">Full name</label>
+          <div class="input-wrap"><span class="input-icon">♙</span><input id="name" name="name" type="text" placeholder="Alex Morgan" autocomplete="name" required></div>
+
+          <label for="email">Email address</label>
+          <div class="input-wrap"><span class="input-icon">✉</span><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required></div>
+
+          <div class="label-row"><label for="password">Password</label></div>
+          <div class="input-wrap"><span class="input-icon">⌑</span><input id="password" name="password" type="password" placeholder="At least 8 characters" autocomplete="new-password" required minlength="8"><button class="reveal" type="button" id="togglePassword" aria-label="Show password">Show</button></div>
+
+          <button class="primary-btn" type="submit">Create account <span>→</span></button>
+          <div id="message" class="message" role="status"></div>
+        </form>
+
+        <div class="separator"><span>ALREADY HAVE AN ACCOUNT?</span></div>
+        <a class="secondary-btn" href="login.html" style="text-align:center;display:block;">Sign in instead <span>↗</span></a>
+        <p class="fineprint">By continuing, you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.</p>
+      </div>
+      <div class="form-bottom"><span>© 2026 AuthFlow</span><span>Need help? <a href="mailto:support@example.com">Contact support</a></span></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
